@@ -1,6 +1,6 @@
 (() => {
   const cart = [];
-  const WHATSAPP_NUMBER = '521234567890'; // Número de WhatsApp configurado
+  const WHATSAPP_NUMBER = '59177821666'; // Número de WhatsApp configurado
 
   const $ = (sel) => document.querySelector(sel);
   const $$ = (sel) => document.querySelectorAll(sel);
