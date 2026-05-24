@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NONiBOOM — Gomitas Nutritivas</title>
+  <meta name="description" content="NONiBOOM — Nuestra Bomba de Nutrientes. Gomitas deliciosas con noni, uva y naranja.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text"><span class="nav__logo-non">NONi</span><span class="nav__logo-boom">BOOM</span></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="historia.html">Quienes somos</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav__cart" id="cartBtn" aria-label="Ver carrito">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <span class="nav__cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero__bg"></div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#fff"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stats__item">
+        <span class="stats__number">100%</span>
+        <span class="stats__label">Natural</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">0</span>
+        <span class="stats__label">Colorantes artificiales</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">3</span>
+        <span class="stats__label">Sabores únicos</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">★ 4.9</span>
+        <span class="stats__label">Valoración clientes</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestra Especialidad</span>
+        <h2 class="section-title">Elige tu presentación ideal</h2>
+        <p class="section-desc">Gomitas de Noni 100% orgánicas y artesanales con procesos caseros. Hechas con amor en Bolivia 🇧🇴.</p>
+      </div>
+      
+      <div class="product-showcase">
+        <div class="product-showcase__image-container">
+          <img src="assets/producto-noniboom.jpg" alt="NONiBOOM Gomitas de Noni Orgánicas y Artesanales" class="product-showcase__image">
+          <div class="product-showcase__flag-badge">
+            <span class="flag-icon">🇧🇴</span> Hecho en Bolivia
+          </div>
+        </div>
+        
+        <div class="product-showcase__details">
+          <div class="product-showcase__badge">100% Orgánico y Artesanal</div>
+          <h3 class="product-showcase__title">Gomitas de Noni NONiBOOM</h3>
+          <p class="product-showcase__description">
+            Nuestra bomba de nutrientes natural. Diseñada para fortalecer el sistema inmunológico, aportar energía saludable y mejorar el bienestar familiar de forma práctica y deliciosa.
+          </p>
+          
+          <div class="product-showcase__section">
+            <h4 class="product-showcase__section-title">1. Selecciona el tamaño:</h4>
+            <div class="product-showcase__sizes">
+              <label class="size-option">
+                <input type="radio" name="productSize" value="Personal" data-price="10" checked>
+                <div class="size-option__card">
+                  <span class="size-option__emoji">🧑</span>
+                  <div class="size-option__info">
+                    <span class="size-option__name">Personal</span>
+                    <span class="size-option__price">10 Bs</span>
+                  </div>
+                </div>
+              </label>
+              
+              <label class="size-option">
+                <input type="radio" name="productSize" value="Mediano" data-price="35">
+                <div class="size-option__card">
+                  <span class="size-option__emoji">🎒</span>
+                  <div class="size-option__info">
+                    <span class="size-option__name">Mediano</span>
+                    <span class="size-option__price">35 Bs</span>
+                  </div>
+                </div>
+              </label>
+              
+              <label class="size-option">
+                <input type="radio" name="productSize" value="Familiar" data-price="65">
+                <div class="size-option__card">
+                  <span class="size-option__emoji">🏡</span>
+                  <div class="size-option__info">
+                    <span class="size-option__name">Familiar</span>
+                    <span class="size-option__price">65 Bs</span>
+                  </div>
+                </div>
+              </label>
+              
+              <label class="size-option">
+                <input type="radio" name="productSize" value="Super Pack Familiar" data-price="135">
+                <div class="size-option__card">
+                  <span class="size-option__emoji">💥</span>
+                  <div class="size-option__info">
+                    <span class="size-option__name">Super Pack Familiar</span>
+                    <span class="size-option__price">135 Bs</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          
+          <div class="product-showcase__section">
+            <h4 class="product-showcase__section-title">2. Tipo de compra:</h4>
+            <div class="product-showcase__types">
+              <label class="type-option">
+                <input type="radio" name="purchaseType" value="al-detalle" checked>
+                <div class="type-option__card">
+                  <strong>Compra al Detalle</strong>
+                  <span>Precios regulares para consumo personal</span>
+                </div>
+              </label>
+              
+              <label class="type-option">
+                <input type="radio" name="purchaseType" value="al-por-mayor">
+                <div class="type-option__card">
+                  <strong>Compra al Por Mayor</strong>
+                  <span class="wholesale-tag">20% DESCUENTO (Mínimo 6 unidades)</span>
+                </div>
+              </label>
+            </div>
+          </div>
+          
+          <div class="product-showcase__section product-showcase__section--row">
+            <div>
+              <h4 class="product-showcase__section-title">3. Cantidad:</h4>
+              <div class="quantity-selector">
+                <button type="button" class="quantity-btn" id="showcaseQtyMinus">−</button>
+                <input type="number" id="showcaseQty" value="1" min="1" readonly>
+                <button type="button" class="quantity-btn" id="showcaseQtyPlus">+</button>
+              </div>
+            </div>
+            
+            <div class="product-showcase__pricing">
+              <span class="pricing-label">Precio Unitario:</span>
+              <div class="pricing-values">
+                <span class="pricing-original" id="unitPriceOriginal"></span>
+                <span class="pricing-current" id="unitPriceCurrent">10 Bs</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-showcase__total-row">
+            <div class="product-showcase__total-price">
+              <span>Subtotal estimado:</span>
+              <strong id="showcaseTotalPrice">10 Bs</strong>
+            </div>
+            <button class="btn btn--primary" id="addToCartShowcase">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits" id="beneficios">
+    <div class="container benefits__inner benefits__inner--single">
+      <div class="benefits__content">
+        <span class="section-tag">¿Por qué NONiBOOM?</span>
+        <h2 class="section-title">Nutrición que explota de sabor</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <span class="benefits__icon">🌱</span>
+            <div>
+              <strong>Ingredientes 100% naturales</strong>
+              <p>Sin colorantes ni saborizantes artificiales. Solo lo mejor de la naturaleza.</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <span class="benefits__icon">💪</span>
+            <div>
+              <strong>Rico en antioxidantes</strong>
+              <p>El noni, la uva y la naranja aportan vitaminas y minerales esenciales.</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <span class="benefits__icon">👨‍👩‍👧‍👦</span>
+            <div>
+              <strong>Para toda la familia</strong>
+              <p>Deliciosas y seguras. Un snack saludable que a todos les encanta.</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <span class="benefits__icon">🚀</span>
+            <div>
+              <strong>Energía natural</strong>
+              <p>Impulsa tu día con nutrientes reales, sin azúcares refinados añadidos.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonios</span>
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      </div>
+      <div class="testimonials__grid">
+        <blockquote class="testimonial">
+          <p>"Mis hijos las adoran y yo estoy tranquila sabiendo que son nutritivas. ¡El sabor a uva es increíble!"</p>
+          <footer>— María G., Ciudad de México</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Llevo 3 meses tomando las gomitas de noni y siento más energía. Además, saben delicioso."</p>
+          <footer>— Carlos R., Guadalajara</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"El pack completo es la mejor compra. Las comparto con amigos y siempre me piden el link."</p>
+          <footer>— Ana L., Monterrey</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <span class="section-tag">Contáctanos</span>
+        <h2 class="section-title">¿Listo para tu explosión de nutrientes?</h2>
+        <p class="contact__desc">Escríbenos para hacer tu pedido o resolver cualquier duda. Envíos a todo México.</p>
+        <ul class="contact__details">
+          <li>
+            <span>📱</span>
+            <a href="https://wa.me/521234567890" target="_blank" rel="noopener">WhatsApp: +52 123 456 7890</a>
+          </li>
+          <li>
+            <span>✉️</span>
+            <a href="mailto:info@noniboom.com">info@noniboom.com</a>
+          </li>
+          <li>
+            <span>📍</span>
+            <span>Envíos a todo México</span>
+          </li>
+        </ul>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="tu@email.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Cuéntanos qué productos te interesan..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__brand-name"><span class="footer__brand-non">NONi</span><span class="footer__brand-boom">BOOM</span></p>
+        <p>Nuestra Bomba de Nutrientes</p>
+      </div>
+      <div class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="historia.html">Quienes somos</a>
+        <a href="#productos">Productos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 NONiBOOM. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart" id="cartPanel">
+    <div class="cart__header">
+      <h3>Tu carrito</h3>
+      <button class="cart__close" id="cartClose" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <ul class="cart__items" id="cartItems">
+      <li class="cart__empty">Tu carrito está vacío</li>
+    </ul>
+    <div class="cart__footer">
+      <div class="cart__total">
+        <span>Total:</span>
+        <span id="cartTotal">0 Bs</span>
+      </div>
+      <button class="btn btn--primary btn--full" id="checkoutBtn">Pedir por WhatsApp</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
